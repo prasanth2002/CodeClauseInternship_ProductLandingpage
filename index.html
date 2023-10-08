@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Stardos+Stencil:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        .main .background {
+            background-image: url(Images/bg.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 0px ;
+            height: 1000px;
+
+        }
+
+        .logo {
+            position: absolute;
+            right: 80%;
+            width: 20%;
+
+        }
+
+        .logo img {
+            width: 200px;
+        }
+
+        .main .background .img3 {
+
+            position: absolute;
+            top: 20%;
+          
+            left: -70px;
+            width: 500px;
+
+
+        }
+
+
+
+        .background {
+            width: 100%;
+
+        }
+
+        .main .background .img2 {
+            position: absolute;
+            top: -10px;
+            width: 100%;
+
+
+        }
+
+        .main .background img {
+            position: relative;
+            left: -0%;
+        }
+
+        .nav {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            align-self: start;
+        }
+
+        .nav ul li {
+            color: black;
+            list-style: none;
+            font: 1.2em sans-serif;
+            font-weight: 500;
+            padding-top: 35px;
+            padding-left: 25px;
+        }
+
+        .search {
+            position: absolute;
+            left: 90%;
+        }
+
+        .search .imgw {
+            padding-top: 20px;
+            padding-left: 25px;
+            cursor: pointer;
+
+        }
+
+
+        .nav ul li:hover {
+
+            cursor: pointer;
+            color: rgb(248, 132, 7);
+            -webkit-text-stroke: 0.2px;
+
+        }
+
+        .title {
+            position: absolute;
+            z-index: 1px;
+            top: 40%;
+            left: 40%;
+            background: -webkit-linear-gradient(0deg, #fffdfd 10%, #ecf2ea 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Stardos Stencil', cursive;
+            -webkit-text-stroke: 1px rgb(19, 17, 19);
+
+        }
+
+        .button-48 {
+            appearance: none;
+            background-color: #FFFFFF;
+            border-width: 0;
+            box-sizing: border-box;
+            color: #000000;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Clarkson, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0;
+            line-height: 1em;
+            margin: 0;
+            opacity: 1;
+            outline: 0;
+            padding: 1.5em 2.2em;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            text-rendering: geometricprecision;
+            text-transform: uppercase;
+            transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            white-space: nowrap;
+            left: 45%;
+            top: -500px;
+
+        }
+
+        .button-48:before {
+            animation: opacityFallbackOut .5s step-end forwards;
+            backface-visibility: hidden;
+            background-color: #EBEBEB;
+            clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: translateZ(0);
+            transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+            width: 100%;
+        }
+
+        .button-48:hover:before {
+            animation: opacityFallbackIn 0s step-start forwards;
+            clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+        }
+
+        .button-48:after {
+            background-color: #FFFFFF;
+        }
+
+        .button-48 span {
+            z-index: 1;
+            position: relative;
+        }
+
+        .socialmedia {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 95%;
+            top: 50%;
+        }
+
+        .socialmedia img {
+            width: 50px;
+            padding-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="background">
+
+            <img class="img2" src="Images/white.png" alt="">
+
+            <img class="img3" src="Images/product.png" />
+        </div>
+        <div class="nav">
+            <ul>
+                <div class="logo">
+                    <img src="Images/logo.png" />
+                </div>
+                <li> Home</li>
+                <li>About Us</li>
+                <li> Tourist Plans</li>
+                <li>Contact us</li>
+
+
+                <div class="search">
+                    <img class="imgw" src="Images/pngwing.com (1).png" alt="" width="30px">
+                    <img class="imgw" src="Images/pngwing.com.png" alt="" width=30px>
+                </div>
+            </ul>
+        </div>
+        <div class="title">
+            <h1> Ready To Wear...</h1>
+        </div>
+        <div>
+
+            <button class="button-48" role="button"><span class="text">Click to shop</span></button>
+        </div>
+        <div class="socialmedia">
+            <img src="Images/facebook.png" alt="" srcset="">
+            <img src="Images/insta.png" alt="" srcset="">
+            <img src="Images/twitter.png" alt="" srcset="">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script>
+        const tl = gsap.timeline()
+        tl.from(
+
+            ".background ",
+            {
+                y: "-300%",
+                duration: 1
+
+            });
+        tl.from(
+            ".logo ",
+            {
+                y: -"150",
+                duration: 1,
+            }
+        )
+        tl.from(
+
+            "li",
+            {
+                y: "-150%",
+                duration: 1
+
+            });
+
+        tl.from(
+
+            ".imgw",
+            {
+                y: "-300%",
+                duration: 1
+
+            });
+        tl.from(
+            ".title", {
+            y: "600",
+            duration: 0.5,
+        });
+        tl.from(
+
+            ".button-48",
+            {
+                y: "600",
+                duration: 0.5,
+            }
+        )
+
+
+        tl.from(
+
+            ".img3 ",
+            {
+                y: "-250%",
+                duration: 2,
+               
+            });
+       
+
+
+        tl.from(
+
+            ".socialmedia ",
+            {
+                x: "300%",
+                duration: 1
+
+            });
+
+    </script>
+</body>
+
+</html>
